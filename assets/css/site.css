@@ -1,5 +1,9 @@
 body {
-  font-family: "Museo300";
+  font-family: "PT Sans";
+}
+
+a {
+  color: #27abb4;
 }
 
 .cke_skin_sapling .cke_toolbox {
@@ -10,7 +14,6 @@ border: none;
 div.navbar-inner {
 -webkit-border-radius: 0px;
 -moz-border-radius: 0px;
-border-radius: 0px;
 }
 
 @media (max-width: 767px) {
@@ -20,31 +23,27 @@ border-radius: 0px;
     padding-right: 0px;
   }
 
-  .container  {
-    padding-left: 20px;
-    padding-right: 20px;
+  .container {
+    padding-left: auto;
+    padding-right: auto;
   }
 
 }
 
-.navbar .brand {
-  padding: 14px 20px 12px;
-}
 
-.navbar ul {
-  padding-top: 6px;
+.navbar .nav > li > a { 
+    background: none;
+    background-position: 0;
+    font-size: 14px;
 }
 
 form#nav-search {
   float: left;
-  padding-top: 12px;
-  height: 17px;
 }
 
 form#nav-search input {
   line-height: 19px;
-  font-size: 13px;
-  font-family: "Museo300";
+  font-size: 14px;
   color: #ddd;
   border: none;
   background: none;
@@ -73,6 +72,7 @@ form#nav-search input {
 /* headers */
 
 h1 {
+  font-family: Arvo;
   float: left;
 }
 
@@ -81,6 +81,234 @@ div#object_actions {
   padding-top: 4px;
   margin-left: 20px;
   float: left;
+}
+
+hr.header {
+    height: 5px;
+    border: 0;
+    background: url(../img/hr.png);
+}
+
+/*
+====================================
+ Messages and alerts
+====================================
+*/
+
+.messages {
+    background-color: #F3B042;
+    border: 1px solid #D2D2D2;
+    color: black;
+    font-size: large;
+    list-style-type: none;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    padding: 1em 1em 0;
+}
+.mapdata .messages {
+    border-top: none;
+    margin-top: 0;
+}
+.messages li {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 1em;
+}
+
+#dialog {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.05);
+    border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    padding: 1em;
+    padding-bottom: 0.5em;
+    color: #000000;
+    margin-bottom: 1em;
+    margin-top: 0.8em;
+}
+#dialog ul {
+    list-style-type: none;
+}
+#dialog ul li {
+    margin-left: 0;
+}
+
+#create_page_dialog {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.05);
+    border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    padding: 1em;
+    color: #000000;
+    margin-bottom: 1em;
+    margin-top: 0.8em;
+}
+#create_page_dialog div {
+    min-height: 3em;
+}
+.create_map {
+    padding-top: 1em;
+    min-width: 30px;
+    display: table;
+    vertical-align: top;
+    margin-bottom: 0;
+}
+.create_map .button {
+    margin-right: 0.5em;
+    margin-top: -0.35em;
+}
+.button.map .text {
+    background: url(../img/map-icon-small.png) 0px 66% no-repeat;
+    padding-left: 20px;
+}
+.button.redirect .text {
+    background: url(../img/arrow-turn-left.png) 2px 2px no-repeat;
+    padding-left: 20px;
+}
+
+/*
+====================================
+ Recent Changes
+====================================
+*/
+
+#recentchanges ul {
+    list-style-type: none;
+    margin-top: 1em;
+}
+#recentchanges h2 {
+    font-size: 180%;
+    margin-top: 0.7em;
+    padding-bottom: 0.1em;
+    border-bottom: 2px solid;
+}
+#recentchanges h3 {
+    margin-top: 1em;
+}
+#recentchanges h3 a, #recentchanges h3 a:link {
+    color: #444;
+}
+#recentchanges h3 a:hover {
+    color: #111;
+}
+#recentchanges hr {
+    height: 5px;
+    border: none;
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.1);
+    margin-top: 2em;
+    margin-bottom: 1.5em;
+
+    /* Copied from #main margin: */
+    margin-left: -5em;
+    margin-right: -8em;
+}
+#recentchanges #limit_to {
+    float: right;
+    margin-top: 0.1em;
+}
+#recentchanges #limit_to span {
+    float: left;
+}
+#recentchanges #limit_to .pagination {
+    margin-left: 0.4em;
+    margin-right: 0.4em;
+    margin-top: -0.6em;
+}
+
+
+#recentchanges li {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 30px;
+    margin-bottom: 0.7em;
+}
+
+#recentchanges .changelabel {
+    width: 5.2em;
+    /* This is basically .little.button */
+    text-align: center;
+    font-weight: bold;
+    font-size: 90%;
+    display: block;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    float: left;
+    padding: 7px 10px 8px 10px;
+    line-height: 100%;
+    margin: 0;
+    margin-right: 1em;
+    border: 1px solid #bfbfbf;
+}
+#recentchanges .changelabel.updated {
+    /* .updated is a button */
+    color: #666;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 1);
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1), 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+    -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1), 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+    -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1), 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+
+    /* TODO: explore using purely CSS gradients */
+    background: #E8ECEF url(../img/gradient.png) repeat-x bottom left;
+    border: 1px solid #bfbfbf;
+
+    /* Slightly different padding*/
+    padding-top: 6px;
+    padding-bottom: 7px;
+
+    text-decoration: none;
+}
+#recentchanges .changelabel.updated:hover
+{
+    background-color: #c8cbde;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+    border-color: #c8cbde;
+    border-bottom-color: #757783;
+    color: #fff;
+}
+#recentchanges .changelabel.updated:active {
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+#recentchanges .changelabel.added {
+    background-color: #fdfab4;
+    color: #6b6945;
+    border-color: #e1e1e1;
+    border: none;
+    border-radius: 0px;
+}
+#recentchanges .changelabel.deleted {
+    background-color: #f3d8d8;
+    border-color: #dedede;
+    color: #808080;
+    color: #767676;
+    color: #6b6b6b;
+    color: #646464;
+    border: none;
+    border-radius: 0px;
+}
+#recentchanges .changelabel a {
+    text-decoration: none;
+    color: #666;
+}
+#recentchanges .comment {
+    color: black;
+    padding-right: 0.5em;
+}
+
+#recentchanges .map .changelabel span {
+    background: url(../img/map-icon-small.png) 0px 66% no-repeat;
+    padding-left: 20px;
+}
+#recentchanges .file .changelabel span {
+    background: url(../img/document-block-light.png) 2px 66% no-repeat;
+    padding-left: 20px;
+}
+#recentchanges .redirect .changelabel span {
+    background: url(../img/arrow-turn-left.png) 2px 2px no-repeat;
+    padding-left: 20px;
 }
 
 
@@ -189,24 +417,9 @@ table.welcome-box {
 
 }
 
-.navbar-search {
-  padding-top: 3px;
-}
-
 .navbar-search .search-query {
-  padding-top: 6px;
+  padding-top: 3px;
   padding-bottom: 3px;
-}
-
-div#footer {
-  padding-top: 30px;
-  margin-top: 50px;
-  border-top: 1px solid #e5e5e5;
-}
-
-div#footer p {
-  text-transform: uppercase;
-  color: #ccc;
 }
 
 div#attributions {
@@ -283,4 +496,36 @@ width: 402px;
 
 #map div.info {
   margin-top: 5px;
+}
+
+/*footer*/
+
+footer {
+  padding: 6px 15px;
+    background-color: #222222;
+    color: #999999;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+footer a.footermenu {
+  float: none;
+  color: #999999;
+  text-decoration: none;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background: none;
+  background-position: 0;
+  padding-left: 0;
+}
+
+footer a.footermenu:hover {
+  background-color: transparent;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+footer p {
+  font-size: small;
 }
