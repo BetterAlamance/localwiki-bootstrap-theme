@@ -1,20 +1,22 @@
-body {
+/*body {
   font-family: "PT Sans";
-}
+}*/
 
-a {
+/*a {
   color: #27abb4;
-}
+}*/
 
 .cke_skin_sapling .cke_toolbox {
 background: none;
 border: none;
 }
 
-div.navbar-inner {
+/*.navbar-inner {
 -webkit-border-radius: 0px;
 -moz-border-radius: 0px;
-}
+    padding-left: 0px;
+    padding-right: 0px;
+}*/
 
 @media (max-width: 767px) {
 
@@ -31,7 +33,7 @@ div.navbar-inner {
 }
 
 
-.navbar .nav > li > a { 
+/*.navbar .nav > li > a { 
     background: none;
     background-position: 0;
     font-size: 14px;
@@ -66,28 +68,28 @@ form#nav-search input {
   box-shadow:0 1px 3px rgba(0, 0, 0, 0.25),inset 0 -1px 0 rgba(0, 0, 0, 0.1);
   width: 120px;
   margin-bottom: 0;
-}
+}*/
 
 
 /* headers */
 
-h1 {
+/*h1 {
   font-family: Arvo;
   float: left;
-}
+}*/
 
 
-div#object_actions {
+/*div#object_actions {
   padding-top: 4px;
   margin-left: 20px;
   float: left;
-}
+}*/
 
-hr.header {
+/*hr.header {
     height: 5px;
     border: 0;
     background: url(../img/hr.png);
-}
+}*/
 
 /*
 ====================================
@@ -95,7 +97,7 @@ hr.header {
 ====================================
 */
 
-.messages {
+/*.messages {
     background-color: #F3B042;
     border: 1px solid #D2D2D2;
     color: black;
@@ -164,153 +166,7 @@ hr.header {
 .button.redirect .text {
     background: url(../img/arrow-turn-left.png) 2px 2px no-repeat;
     padding-left: 20px;
-}
-
-/*
-====================================
- Recent Changes
-====================================
-*/
-
-#recentchanges ul {
-    list-style-type: none;
-    margin-top: 1em;
-}
-#recentchanges h2 {
-    font-size: 180%;
-    margin-top: 0.7em;
-    padding-bottom: 0.1em;
-    border-bottom: 2px solid;
-}
-#recentchanges h3 {
-    margin-top: 1em;
-}
-#recentchanges h3 a, #recentchanges h3 a:link {
-    color: #444;
-}
-#recentchanges h3 a:hover {
-    color: #111;
-}
-#recentchanges hr {
-    height: 5px;
-    border: none;
-    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.1);
-    margin-top: 2em;
-    margin-bottom: 1.5em;
-
-    /* Copied from #main margin: */
-    margin-left: -5em;
-    margin-right: -8em;
-}
-#recentchanges #limit_to {
-    float: right;
-    margin-top: 0.1em;
-}
-#recentchanges #limit_to span {
-    float: left;
-}
-#recentchanges #limit_to .pagination {
-    margin-left: 0.4em;
-    margin-right: 0.4em;
-    margin-top: -0.6em;
-}
-
-
-#recentchanges li {
-    list-style-type: none;
-    margin-left: 0;
-    padding-left: 30px;
-    margin-bottom: 0.7em;
-}
-
-#recentchanges .changelabel {
-    width: 5.2em;
-    /* This is basically .little.button */
-    text-align: center;
-    font-weight: bold;
-    font-size: 90%;
-    display: block;
-    border-radius: 3px;
-    -moz-border-radius: 3px;
-    -webkit-border-radius: 3px;
-    float: left;
-    padding: 7px 10px 8px 10px;
-    line-height: 100%;
-    margin: 0;
-    margin-right: 1em;
-    border: 1px solid #bfbfbf;
-}
-#recentchanges .changelabel.updated {
-    /* .updated is a button */
-    color: #666;
-    text-shadow: 0 1px 0 rgba(255, 255, 255, 1);
-    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1), 0 1px 0 rgba(255, 255, 255, 0.5) inset;
-    -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1), 0 1px 0 rgba(255, 255, 255, 0.5) inset;
-    -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1), 0 1px 0 rgba(255, 255, 255, 0.5) inset;
-
-    /* TODO: explore using purely CSS gradients */
-    background: #E8ECEF url(../img/gradient.png) repeat-x bottom left;
-    border: 1px solid #bfbfbf;
-
-    /* Slightly different padding*/
-    padding-top: 6px;
-    padding-bottom: 7px;
-
-    text-decoration: none;
-}
-#recentchanges .changelabel.updated:hover
-{
-    background-color: #c8cbde;
-    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
-    border-color: #c8cbde;
-    border-bottom-color: #757783;
-    color: #fff;
-}
-#recentchanges .changelabel.updated:active {
-    box-shadow: none;
-    -moz-box-shadow: none;
-    -webkit-box-shadow: none;
-}
-
-#recentchanges .changelabel.added {
-    background-color: #fdfab4;
-    color: #6b6945;
-    border-color: #e1e1e1;
-    border: none;
-    border-radius: 0px;
-}
-#recentchanges .changelabel.deleted {
-    background-color: #f3d8d8;
-    border-color: #dedede;
-    color: #808080;
-    color: #767676;
-    color: #6b6b6b;
-    color: #646464;
-    border: none;
-    border-radius: 0px;
-}
-#recentchanges .changelabel a {
-    text-decoration: none;
-    color: #666;
-}
-#recentchanges .comment {
-    color: black;
-    padding-right: 0.5em;
-}
-
-#recentchanges .map .changelabel span {
-    background: url(../img/map-icon-small.png) 0px 66% no-repeat;
-    padding-left: 20px;
-}
-#recentchanges .file .changelabel span {
-    background: url(../img/document-block-light.png) 2px 66% no-repeat;
-    padding-left: 20px;
-}
-#recentchanges .redirect .changelabel span {
-    background: url(../img/arrow-turn-left.png) 2px 2px no-repeat;
-    padding-left: 20px;
-}
-
+}*/
 
 /* recent changes */
 
@@ -479,7 +335,7 @@ div#attributions {
   display: inline;
 }
 
-#map {
+/*#map {
 background-color: #f7f7f7;
 padding: 10px 10px 4px 10px;
 border: 1px solid #DAE1E5;
@@ -496,11 +352,11 @@ width: 402px;
 
 #map div.info {
   margin-top: 5px;
-}
+}*/
 
 /*footer*/
 
-footer {
+/*footer {
   padding: 6px 15px;
     background-color: #222222;
     color: #999999;
@@ -528,4 +384,4 @@ footer a.footermenu:hover {
 
 footer p {
   font-size: small;
-}
+}*/
