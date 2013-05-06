@@ -50,14 +50,7 @@
         <div class="container">
           <div class="inner">
             <h1 id="object_title">{% block header_title %}{% endblock %}</h1>
-            <div id="object_actions">{% block object_actions %}
-  <ul class="nav nav-pills">
-    {% if page %}
-        <li><a href="{% url pages:edit slug=page.pretty_slug %}" class="">Edit</a></li>
-        <li><a href="{% url pages:history slug=page.pretty_slug %}" class="">Info</a></li>
-    {% endif %}
-  </ul>
-              {% endblock %}</div>
+            <div id="object_actions">{% block object_actions %}{% endblock %}</div>
             <div id="object_subtitle">{% block header_subtitle %}{% endblock %}</div>
           </div>
         </div>
