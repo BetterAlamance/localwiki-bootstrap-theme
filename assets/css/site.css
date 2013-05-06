@@ -6,10 +6,10 @@
   color: #27abb4;
 }*/
 
-.cke_skin_sapling .cke_toolbox {
+/*.cke_skin_sapling .cke_toolbox {
 background: none;
 border: none;
-}
+} */
 
 /*.navbar-inner {
 -webkit-border-radius: 0px;
@@ -18,7 +18,7 @@ border: none;
     padding-right: 0px;
 }*/
 
-@media (max-width: 767px) {
+/* @media (max-width: 767px) {
 
   body {
     padding-left: 0px;
@@ -30,7 +30,7 @@ border: none;
     padding-right: auto;
   }
 
-}
+} */
 
 
 /*.navbar .nav > li > a { 

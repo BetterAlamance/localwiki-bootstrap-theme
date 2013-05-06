@@ -1,5 +1,24 @@
 /* LICENSE and credits: please see LICENSE.txt in this directory */
 
+.cke_skin_sapling .cke_toolbox {
+background: none;
+border: none;
+}
+
+@media (max-width: 767px) {
+
+  body {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .container {
+    padding-left: auto;
+    padding-right: auto;
+  }
+
+}
+
 body {
     z-index: 0;
     /*background: #fafafa url(../img/body-bg.png) top left repeat;*/
@@ -452,6 +471,11 @@ hr.header {
 .mapdata #content_wrapper {
    /* Don't remove the border w/o checking that maps still occupy the full window */
    border: 1px solid #fafafa;
+}
+
+/*overwrite bootstrap */
+.olTileImage {
+    max-width: none;
 }
 
 /*
