@@ -141,6 +141,7 @@ textarea, input, select {
 }
 
 .navbar .nav > li > a { 
+    background: none;
     color: #999999;
     float: none;
     line-height: 19px;
